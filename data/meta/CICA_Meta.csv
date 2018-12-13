@@ -1,0 +1,5 @@
+code,name,description
+1,AHP,Code indicating whether the mortgage is on a project funded under an AHP, CIP or other CICA program.
+2,CIP,Code indicating whether the mortgage is on a project funded under an AHP, CIP or other CICA program.
+3,Other CICA,Code indicating whether the mortgage is on a project funded under an AHP, CIP or other CICA program.
+9,Not Applicable; Not Purchased under AHP, CIP, or CICA,Code indicating whether the mortgage is on a project funded under an AHP, CIP or other CICA program.

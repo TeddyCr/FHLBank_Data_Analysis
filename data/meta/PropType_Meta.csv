@@ -1,0 +1,13 @@
+code,name,description
+PT01,Single family detached,Property Type
+PT02,Deminimus PUD,Property Type
+PT03,Single Family Attached,Property Type
+PT04,Two family,Property Type
+PT05,Townhouse,Property Type
+PT06,Low-Rise Condominium,Property Type
+PT07,PUD;
+PT08,Duplex,Property Type
+PT09,three family,Property Type
+PT10,Four family,Property Type
+PT11,Hi-Rise condominium,Property Type
+PT12,Manufactured Home,Property Type

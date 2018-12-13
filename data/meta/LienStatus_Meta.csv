@@ -1,0 +1,5 @@
+code,name,description
+1,Secured by first lien,Lien Status
+2,Secured by a subordinate lien,Lien Status
+3,Not secured by a lien,Lien Status
+4,Not Applicable (ie purchased loans),Lien Status

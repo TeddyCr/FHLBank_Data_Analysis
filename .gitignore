@@ -1,0 +1,18 @@
+# Exclude vscode files
+.vscode
+.DS_Store
+
+# Exclude pycache files
+__pycache__/
+
+# Exclude virtenv
+fhlbank/
+.venv
+.ve3
+venv/
+ENV/
+env/
+
+# Exclude data files
+data/input/*.csv
+data/output/

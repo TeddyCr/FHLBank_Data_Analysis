@@ -1,0 +1,6 @@
+code,name,description
+01,11th District Cost of Funds,ARM Index
+02,Other Cost of Funds Index,ARM Index
+03,LIBOR,ARM Index
+04,1 year Constant Treasury Rate,ARM Index
+99,Not an ARM,ARM Index
