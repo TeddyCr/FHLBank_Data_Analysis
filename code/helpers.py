@@ -30,7 +30,8 @@ def downloadFiles(domain, download_urls):
     for download_url in download_urls:
         search_name = re.search(r'/(\w+.csv)',download_url)
         file_name = search_name.group(1)
-        path = os.path.join(os.path.dirname(__file__),'data','input',file_name)
+        path = os.path.join(os.path.dirname(os.path.dirname(__file__))
+                            ,'data','input',file_name)
         
         url = domain + download_url
         
@@ -89,7 +90,7 @@ def fetchPosts(url=None):
 
 
 def hasBeenPublished(fetched_posts=None):
-    base_dirc = os.path.dirname(__file__)
+    base_dirc = os.path.dirname(os.path.dirname(__file__))
     dirc = 'blog_posts'
     path = os.path.join(base_dirc,dirc)
 

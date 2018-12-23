@@ -19,9 +19,11 @@ def initializeFiles():
     url = domain + extension
 
     # Check if folders exist, otherwise create them
-    if not os.path.exists(os.path.join(os.path.dirname(__file__),'data','input')):
+    if not os.path.exists(os.path.join(os.path.dirname(os.path.dirname(__file__))
+                                       ,'data','input')):
         os.makedirs('data/input')
-    if not os.path.exists(os.path.join(os.path.dirname(__file__),'data','output')):
+    if not os.path.exists(os.path.join(os.path.dirname(os.path.dirname(__file__))
+                          ,'data','output')):
         os.makedirs('data/output')
 
     response = sendRequest(url)
@@ -29,12 +31,13 @@ def initializeFiles():
 
     downloadFiles(domain, download_urls)
 
-    aggregateFiles(os.path.join(os.path.dirname(__file__),'data'))
+    aggregateFiles(os.path.join(os.path.dirname(os.path.dirname(__file__)),'data'))
 
     return True 
 
 def getFile():
-    path_to_output = os.path.join(os.path.dirname(__file__),'data', 'output')
+    path_to_output = os.path.join(os.path.dirname(os.path.dirname(__file__))
+                                  ,'data', 'output')
     for dircs, subdircs, files in os.walk(path_to_output):
         for file in files:
             if '.csv' in file:
@@ -85,7 +88,7 @@ def firstTimeBorrowerIncome(df=pd.DataFrame()):
     if df.empty:
         df = getFile()
 
-    df_inc = pd.read_csv(os.path.join(os.path.dirname(__file__)
+    df_inc = pd.read_csv(os.path.join(os.path.dirname(os.path.dirname(__file__))
                                       ,'data','input','census','income_data.csv'))
     
     df = df[['Year', 'Income']].groupby('Year', as_index=False).mean()
@@ -113,7 +116,7 @@ def firstTimeBorrowerEthnicity(df=pd.DataFrame()):
     if df.empty:
         df = getFile()
 
-    df_eth = pd.read_csv(os.path.join(os.path.dirname(__file__)
+    df_eth = pd.read_csv(os.path.join(os.path.dirname(os.path.dirname(__file__))
                         ,'data/input/census/demographic_data.csv'))
     df_eth = df_eth.set_index('year')
     df_eth = df_eth.div(df_eth.sum(axis=1), axis=0) * 100
@@ -178,7 +181,8 @@ def drawLineGraphs(data, title, xaxis, yaxis, dual=False):
 
 
 def executeFlow():
-    path_to_output = os.path.join(os.path.dirname(__file__),'data', 'output')
+    path_to_output = os.path.join(os.path.dirname(os.path.dirname(__file__))
+                                  ,'data', 'output')
     for dircs, subdircs, files in os.walk(path_to_output):
         for file in files:
             if not os.path.isfile(os.path.join(path_to_output,file)): 
