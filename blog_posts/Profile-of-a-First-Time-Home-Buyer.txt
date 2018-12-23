@@ -1,0 +1,44 @@
+TAGS: Data_Anlysis, Housing, Mortgage
+<h1>Profile of a First Time Home Buyer</h1>
+<p><i><strong>Disclaimer:</strong> this post does not intend to explain trends observed in the graphs below. It simply aims at defining the profile of a first time home buyer in 2017. Trend analysis will be the subject of a different post.</i></p>
+<h2>Context</h2>
+<p>The below analysis has been realized using FHL Banks data from (<a href="https://www.fhfa.gov/DataTools/Downloads/Pages/FHLBank-Public-Use-Database-Previous-Years.aspx" target="_blank">fhfa.gov</a>). FHL Banks (Federal Home Loan Banks) are 11 government-sponsored banks providing liquidities to commercial banks to support home buying in their communities. Each bank is responsible for a specific region - see figure 1.</p>
+<figure>
+<img src="http://www.fhlbanks.com/images/fhl_map_june2015.png?crc=323798543" alt="Figure 1 - FHL Banks Region Division"/>
+<figcaption>Figure 1 - FHL Banks Region Division</figcaption>
+</figure>
+<p>This analysis attempts to define who a typical first time home buyer in the US is. To realize this analysis, the data have been analyzed using python (<a href="" target="_blank">GitHub Repo</a>) and cross-referenced with US Census data. to establish a "typical" profile, we analyzed first time home buyers across 4 attributes:
+<ul>
+    <li>Average age</li>
+    <li>Gender</li>
+    <li>Ethnicity</li>
+    <li>Income</li>
+</ul>
+<i><strong>Note:</strong> the income analysis includes the total income of borrower(s) (which include co-borrowers income if one was present). Age, ethnicity, and gender only look at the principal borrower information.</i>
+</p>
+<h2>Average Age</h2>
+<p>In 2017, the average age of a first time home buyer was 36.7 years old, which represents a significant decrease since its pick in 2011 (43.4 years old) - see figure 2. Since 2011, the average age of a first time home buyer has decreased by 15%. </p>
+<figure>
+<img src="https://plot.ly/~teddycrepineau/50.png?share_key=blqARb5SnPcsJ7WP3571AW"  alt="Figure 2 - Average Age of a First Time Home Buyer" />
+<figcaption>Figure 2 - Average Age of a First Time Home Buyer</figcaption>
+</figure>
+<h2>Gender Dsitribution</h2>
+<p>Majority of the principal borrowers in 2017 were males (~64% male vs ~31% female). The percentage of male has been slightly decreasing for the past 8 years (~ -3%) - see figure 3.</p>
+<figure>
+<img src="https://plot.ly/~teddycrepineau/52.png?share_key=7FV3IVaP60gDBqfSGbDC8L"  alt="Figure 3 - Distribution of Gender for First Time Home Buyer" />
+<figcaption>Figure 3 - Distribution of Gender for First Time Home Buyer</figcaption>
+</figure>
+<h2>Ethnicity Distribution</h2>
+<p>With ~80%, caucasian/white represent the majority of the borrowers. It followed by Asian (~7%), African American (~3.5%), American Indian (~2%), and then Pacific Islanders (~0.5%). It is important to note the surrepresentation of caucasian ethnicity amongst borrowers in comparaison to the census data. The African American ethinic group is under represented amongst borrowers in comparison to the Census data.</p>
+<figure>
+<img src="https://plot.ly/~teddycrepineau/56.png?share_key=oNkn8sG4dMjBezYBAT0VJa"  alt="Figure 3 - Distribution of Gender for First Time Home Buyer" />
+<figcaption>Figure 3 - Distribution of Gender for First Time Home Buyer</figcaption>
+</figure>
+<h2>Average Income</h2>
+<p>In 2017 the average income of a first time borrower was ~$80,000, which rerpresents a ~39% increase since 2009. Comparing the 2017 average income of borrower(s) with the US Census, we can see that it is ~$24,000 greaters. Comparing the US Census Median income for the period 2013-2017 with the average borrowr(s) income for the same period, the former increased by ~13%, while the later increased by ~40%.</p>
+<figure>
+<img src="https://plot.ly/~teddycrepineau/54.png?share_key=8mxankfld6550kUknuTqNP" alt="Figure 4 - Average Income of a First Time Home Buyer" />
+<figcaption>Figure 4 - Average Income of a First Time Home Buyer</figcaption>
+</figure>
+<h2>Wrapping Up</h2>
+<p>Base on our analysis, we can define a "typical" first time home buyer in the US as: "an individual/household with a 36/37 years old caucasian male as the principal borrower, and an average income of about $85,000 per year".</p>
