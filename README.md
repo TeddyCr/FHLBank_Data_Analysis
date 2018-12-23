@@ -15,5 +15,5 @@ The repository includes 3 main directories:
 
 Published Blog Posts
 --------------------
-**Note:** all published post use the Attribution-NonCommercial 4.0 International CC license. More information can be found [here](https://creativecommons.org/licenses/by-nc/4.0/)
-* [Profile of a First Time Home Buyer]()
+**Note:** all published post use the Attribution-NonCommercial 4.0 International CC license. More information can be found [here](https://creativecommons.org/licenses/by-nc/4.0/).
+* Profile of a First Time Home Buyer | [link](https://medium.com/@teddycrpineau/profile-of-a-first-time-home-buyer-f6498b9aacc8)
